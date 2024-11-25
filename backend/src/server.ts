@@ -6,6 +6,7 @@ import cors from "cors"
 import { corsConfig } from "./config/cors"
 import { patientRouter } from "./routes/patients.route"
 import { medicRouter } from "./routes/medics.route"
+import { authRouter } from "./routes/auth.route"
 const server = express()
 
 // environment variables //
@@ -19,9 +20,9 @@ server.use(express.urlencoded({ extended: true }))
 server.use(morgan("dev"))
 server.use(cors())
 // routes //
-
 server.use("/api", patientRouter)
 server.use("/api", medicRouter)
+server.use("/api", authRouter)
 
 // database connection //
 connectionDB()
