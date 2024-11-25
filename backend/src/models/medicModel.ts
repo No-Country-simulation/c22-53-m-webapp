@@ -1,6 +1,6 @@
 import mongoose, { Document } from "mongoose";
 
-interface Ipatient extends Document{
+interface IMedic extends Document{
     name: string
     last_name: string
     email:string
@@ -36,5 +36,5 @@ const medicSchema=new mongoose.Schema({
 
 })
 
-const Medic=mongoose.model<Ipatient>("Medic",medicSchema)
+const Medic=mongoose.model<IMedic>("Medic",medicSchema)
 export default Medic
