@@ -1,7 +1,7 @@
 import mongoose,{Document} from "mongoose";
 
 
-interface Ipatient extends Document{
+export interface IPatient extends Document{
     name: string
     last_name: string
     email:string
@@ -36,5 +36,5 @@ const patientSchema=new mongoose.Schema({
 
 })
 
-const Patient=mongoose.model<Ipatient>("Patient",patientSchema)
+const Patient=mongoose.model<IPatient>("Patient",patientSchema)
 export default Patient

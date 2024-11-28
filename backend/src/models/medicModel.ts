@@ -1,6 +1,6 @@
 import mongoose, { Document } from "mongoose";
 
-interface IMedic extends Document{
+export interface IMedic extends Document{
     name: string
     last_name: string
     email:string
