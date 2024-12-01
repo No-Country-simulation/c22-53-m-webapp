@@ -7,11 +7,11 @@ import { corsConfig } from "./config/cors"
 import { patientRouter } from "./routes/patients.route"
 import { medicRouter } from "./routes/medics.route"
 import { authRouter } from "./routes/auth.route"
+import appointmentRouter from "./routes/appointment.route"
 const server = express()
 
 // environment variables //
 config()
-
 
 
 // midlewares //
@@ -23,6 +23,7 @@ server.use(cors())
 server.use("/api", patientRouter)
 server.use("/api", medicRouter)
 server.use("/api", authRouter)
+server.use("/api", appointmentRouter)
 
 // database connection //
 connectionDB()
