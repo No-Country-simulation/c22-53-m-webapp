@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getCV, register, uploadFile } from "../controllers/medicsController";
+import { getMedics, register, uploadFile } from "../controllers/medicsController";
 import { authenticate } from "../middlewares/auth";
 
 const router=Router()
@@ -7,7 +7,7 @@ const router=Router()
 
 router.post("/auth/medic-register",register)
 router.post("/profile/files",authenticate,uploadFile)
-router.get("/medics/cv",getCV)
+router.get("/medics/cv",getMedics)
 export  {
     router as medicRouter
 }

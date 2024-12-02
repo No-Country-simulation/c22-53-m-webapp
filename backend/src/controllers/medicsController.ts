@@ -77,7 +77,7 @@ export const uploadFile = async (req: Request, res: Response) => {
 }
 
 
-export const getCV = async (req: Request, res: Response) => {
+export const getMedics = async (req: Request, res: Response) => {
 
 
     try {
