@@ -31,7 +31,7 @@ export const authenticate=async (req: Request, res: Response,next:NextFunction) 
     if(typeof decoded == "object" && decoded.id){
         const patient= await Patient.findById(decoded.id).select("-password")
         const medic=await Medic.findById(decoded.id).select("-password")
-        const user= patient || medic
+        const user= patient ? patient : medic
         if (!user) {
             const error = new Error("El usuario no existe")
             res.status(404).json({ error: error.message })

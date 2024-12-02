@@ -5,6 +5,8 @@ export interface IMedic extends Document{
     last_name: string
     email:string
     password:string
+    image:string
+    cv:string
 }
 
 
@@ -32,6 +34,14 @@ const medicSchema=new mongoose.Schema({
         trim:true,
         required:true,
         unique:true
+    },
+    image:{
+        type:String,
+        default:""
+    },
+    cv:{
+        type:String,
+        default:""
     }
 
 })

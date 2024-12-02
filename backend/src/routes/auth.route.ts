@@ -9,6 +9,7 @@ const router=Router()
 router.post("/auth/login",login)
 router.get("/auth",authenticate,getUser)
 
+
 export {
     router as authRouter
 }
