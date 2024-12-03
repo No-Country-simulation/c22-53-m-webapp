@@ -6,8 +6,13 @@ export const LandingPage = () => {
     <div className="flex flex-col min-h-screen">
       <div className="text-9xl">Hola soy una landing page</div>
       <Carrousel />
-      <Content />
-      <button className="bg-red-900">Pedir turno online</button>
+      <div className="h-screen w-screen bg-gradient-to-b from-white to-custom-cyan">
+        <Content />
+
+        <button className="bg-transparent border border-black">
+          Pedir turno online
+        </button>
+      </div>
     </div>
   );
 };
