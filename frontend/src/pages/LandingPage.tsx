@@ -1,11 +1,11 @@
-import { Carrousel } from "../components/Landing/Carrousel";
+import { Carousel } from "../components/Landing/Carousel";
 import { Content } from "../components/Landing/Content";
 
 export const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="text-9xl">Hola soy una landing page</div>
-      <Carrousel />
+      <Carousel />
       <div className="h-screen w-screen bg-gradient-to-b from-white to-custom-cyan">
         <Content />
 
