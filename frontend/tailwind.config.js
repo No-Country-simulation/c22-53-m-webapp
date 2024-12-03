@@ -10,6 +10,7 @@ export default {
       lora: ["'Lora'", "serif"],
     },
     colors: {
+      "custom-cyan":"#88DFF2"
     },},
   },
   plugins: [],
