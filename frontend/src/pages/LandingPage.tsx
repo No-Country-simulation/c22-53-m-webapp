@@ -4,7 +4,6 @@ import { Content } from "../components/Landing/Content";
 export const LandingPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <div className="text-9xl">Hola soy una landing page</div>
       <Carousel />
       <div className="h-screen w-screen bg-gradient-to-b from-white to-custom-cyan pt-10 text-center">
         <Content />
