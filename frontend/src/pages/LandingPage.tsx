@@ -6,10 +6,10 @@ export const LandingPage = () => {
     <div className="flex flex-col min-h-screen">
       <div className="text-9xl">Hola soy una landing page</div>
       <Carousel />
-      <div className="h-screen w-screen bg-gradient-to-b from-white to-custom-cyan">
+      <div className="h-screen w-screen bg-gradient-to-b from-white to-custom-cyan pt-10 text-center">
         <Content />
 
-        <button className="bg-transparent border border-black">
+        <button className="bg-transparent border border-black ">
           Pedir turno online
         </button>
       </div>
