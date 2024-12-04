@@ -15,7 +15,7 @@ export const Carousel = () => {
       {[1, 2, 3, 4, 5, 6].map((index) => (
         <Box
           key={index}
-          className="w-screen h-64 flex justify-center items-center overflow-hidden"
+          className=" h-64 flex justify-center items-center overflow-hidden"
           sx={{
             backgroundColor: "white",
             borderRadius: "8px",
