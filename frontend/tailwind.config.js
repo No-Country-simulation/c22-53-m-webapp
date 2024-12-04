@@ -6,12 +6,17 @@ export default {
   ],
   theme: {
     extend: {
-    fontFamily: {
-      lora: ["'Lora'", "serif"],
+      fontFamily: {
+        lora: ["'Lora'", "serif"],
+      },
+      colors: {
+        "custom-cyan":"#88DFF2"
+      },
+      spacing: { 
+        'dvh-100': '100dvh',
+        'dvw-100': '100dvw',
+      }
     },
-    colors: {
-      "custom-cyan":"#88DFF2"
-    },},
   },
   plugins: [],
 }
