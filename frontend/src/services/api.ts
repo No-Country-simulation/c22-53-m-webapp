@@ -1,15 +1,18 @@
+import { isAxiosError } from "axios"
 import api from "../lib/axios"
 import { User } from "../types/types"
 
 
 export const getUser=async()=>{
 
-    const token=localStorage.getItem("auth_token")
-    const {data}=await api<User>("/auth",{
-        headers:{
-            Authorization:`Bearer ${token}`
+    try {
+        const {data}=await api<User>("/auth")
+        return(data)
+    } catch (error) {
+        if (isAxiosError(error) && error.response) {
+            throw new Error(error.response.data.error)
         }
-    })
-    return(data)
+    }
+   
 
 }
