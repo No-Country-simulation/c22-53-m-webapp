@@ -1,8 +1,10 @@
 import { Button } from "@mui/material";
 import { Carousel } from "../components/Landing/Carousel";
 import { Content } from "../components/Landing/Content";
+import { useNavigate } from "react-router-dom";
 
 export const LandingPage = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col min-h-screen w-screen overflow-x-hidden font-lora">
       <Carousel />
@@ -18,6 +20,9 @@ export const LandingPage = () => {
             marginTop: "2.5rem",
             fontFamily: "Lora, serif",
             fontWeight: "bold",
+          }}
+          onClick={() => {
+            navigate("/"); //Cambiar adelante por ruta de cards donde pedir turnos
           }}
         >
           Pedir turno online
