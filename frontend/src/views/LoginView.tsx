@@ -28,7 +28,7 @@ export default function Login(){
                             Guardar Usuario
                         </label>
                     </div>
-                    <button className="font-medium text-sm text-cyan-600">
+                    <button className="ml-2 font-medium text-sm text-cyan-600">
                         He olvidado mi contraseña
                     </button>
                 </div>
