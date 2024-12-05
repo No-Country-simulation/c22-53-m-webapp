@@ -22,7 +22,7 @@ export const LandingPage = () => {
             fontWeight: "bold",
           }}
           onClick={() => {
-            navigate("/"); //Cambiar adelante por ruta de cards donde pedir turnos
+            navigate("/shift");
           }}
         >
           Pedir turno online
