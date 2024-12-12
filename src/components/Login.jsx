@@ -22,7 +22,7 @@ export const Login = () => {
                         placeholder="Contraseña"
                         type="password" />
                 </div>
-                <div className="mt-6 flex justify-between items-center">
+                <div className="mt-6 flex justify-between items-center gap-3">
                     <div>
                         <input type="checkbox" id="remember" />
                         <label className="ml-2 font-medium text-sm" htmlFor="remember">
