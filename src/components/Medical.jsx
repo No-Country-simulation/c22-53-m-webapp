@@ -37,12 +37,12 @@ export const Medical = () => {
 
             {/* Información adicional */}
             <div className="text-center mb-6 mt-8 px-4">
-                <h1 className="text-2xl md:text-4xl font-semibold text-cyan-600">Chat privado y videoconsulta</h1>
+                <h1 className="text-2xl md:text-4xl font-semibold text-cyan-600 ">Chat privado y videoconsulta</h1>
                 <h3 className="text-lg mt-2 text-gray-600">Estos dos servicios permiten realizar las consultas médicas que necesités de forma rápida y cómoda. También podrás compartir imágenes, exámenes médicos y videos con tu médico especialista.</h3>
             </div>
 
             {/* ¿Cómo funciona? */}
-            <div className="flex flex-col md:flex-row items-center justify-between mt-10 space-y-6 md:space-y-0 md:space-x-10 border border-gray-50 shadow-md p-4">
+            <div className="flex flex-col md:flex-row items-center justify-between mt-10 space-y-6 md:space-y-0 md:space-x-10 border border-gray-50 shadow-md p-4 transform hover:scale-105 transition duration-300">
                 {/* Contenedor de texto */}
                 <div className="w-full md:w-1/2">
                     <h1 className="text-3xl md:text-4xl font-bold text-cyan-600 mb-6">¿Cómo Funciona?</h1>

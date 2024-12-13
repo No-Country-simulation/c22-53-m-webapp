@@ -50,37 +50,37 @@ export const Center = () => {
     return (
         <>
             <div className="relative bg-gray-100">
-    <div className="absolute inset-0 flex flex-col justify-center items-center font-bold text-cyan-600 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-center">Encuentra tu Centro Médico</h1>
-        <p className="text-lg md:text-2xl font-semibold mt-6 text-center">Nuestros centros médicos ubicados en puntos estratégicos, privilegian un atendimiento oportuno y de calidad, buscando cubrir todas tus necesidades y expectativas. Descubre los centros médicos más cerca de ti.</p>
-    </div>
-    <picture>
-        <source media="(max-width:640px)" />
-        <source media="(min-width:641px)" />
-        <img
-            className="w-full h-auto mt-20 object-cover"
-            src="https://www.shutterstock.com/image-photo/medical-physician-doctor-hands-healthcare-600nw-261024704.jpg"
-            alt="Artículo principal"
-        />
-    </picture>
-</div>
-<div className="flex flex-col items-center justify-center py-10 bg-gray-100">
-    <div className="text-center mb-6">
-        <h1 className="text-2xl md:text-4xl font-semibold text-cyan-600">Centros Médicos</h1>
-    </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full px-4">
-        {
-            centers.map(center => (
-                <div key={center.id} className="border border-gray-200 w-full h-[450px] flex flex-col items-center justify-center shadow-md p-4 bg-white transform hover:scale-110 transition duration-10">
-                    <img src={center.image} alt="image" className="w-full h-[200px] border border-cyan-600 object-cover" />
-                    <h2 className="text-cyan-600 mt-4 text-lg font-semibold">{center.name}</h2>
-                    <p className="mt-2 text-gray-700 text-center text-sm md:text-base">{center.comment}</p>
-                    <p className="mt-2 text-gray-500 text-center text-sm md:text-base">{center.ubication}</p>
+                <div className="absolute inset-0 flex flex-col justify-center items-center font-bold text-cyan-600 px-4">
+                    <h1 className="text-4xl md:text-5xl font-bold text-center">Encuentra tu Centro Médico</h1>
+                    <p className="text-lg md:text-2xl font-semibold mt-6 text-center">Nuestros centros médicos ubicados en puntos estratégicos, privilegian un atendimiento oportuno y de calidad, buscando cubrir todas tus necesidades y expectativas. Descubre los centros médicos más cerca de ti.</p>
                 </div>
-            ))
-        }
-    </div>
-</div>
+                <picture>
+                    <source media="(max-width:640px)" />
+                    <source media="(min-width:641px)" />
+                    <img
+                        className="w-full h-auto mt-20 object-cover"
+                        src="https://www.shutterstock.com/image-photo/medical-physician-doctor-hands-healthcare-600nw-261024704.jpg"
+                        alt="Artículo principal"
+                    />
+                </picture>
+            </div>
+            <div className="flex flex-col items-center justify-center py-10 bg-gray-100">
+                <div className="text-center mb-6">
+                    <h1 className="text-2xl md:text-4xl font-semibold text-cyan-600">Centros Médicos</h1>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full px-4">
+                    {
+                        centers.map(center => (
+                            <div key={center.id} className="border border-gray-200 w-full h-[450px] flex flex-col items-center justify-center shadow-md p-4 bg-white transform hover:scale-110 transition duration-10">
+                                <img src={center.image} alt="image" className="w-full h-[200px] border border-cyan-600 object-cover" />
+                                <h2 className="text-cyan-600 mt-4 text-lg font-semibold">{center.name}</h2>
+                                <p className="mt-2 text-gray-700 text-center text-sm md:text-base">{center.comment}</p>
+                                <p className="mt-2 text-gray-500 text-center text-sm md:text-base">{center.ubication}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
 
         </>
     )
