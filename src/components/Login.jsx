@@ -5,7 +5,7 @@ export const Login = () => {
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-100 pt-20">
             <div className="bg-white px-5 py-10 rounded-3xl border-2 border-gray-100 transform scale-10">
-            
+
                 <h1 className="text-xl font-semibold">Acceder a Mi Cuenta</h1>
                 <div className="mt-6">
                     <div>
@@ -62,11 +62,11 @@ export const Login = () => {
                     <div className="mt-6 flex justify-center items-center">
                         <p className="font-medium text-sm">¿Todavía no pertenece?</p>
                         <Link to="/FormUser">
-                        <button className="text-cyan-600 text-sm font-medium ml-2">
-                            Quiero registrarme
-                        </button>
+                            <button className="text-cyan-600 text-sm font-medium ml-2">
+                                Quiero registrarme
+                            </button>
                         </Link>
-                        
+
                     </div>
                 </div>
             </div>

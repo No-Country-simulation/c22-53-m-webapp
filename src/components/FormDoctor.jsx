@@ -10,7 +10,7 @@ export const FormDoctor = () => {
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-8">
             <div className="sm:col-span-4">
               <label htmlFor="first-name" className="block text-sm/6 font-medium text-gray-900">
-                First name
+                Nombre
               </label>
               <div className="mt-2">
                 <input
@@ -24,7 +24,7 @@ export const FormDoctor = () => {
             </div>
             <div className="sm:col-span-4">
               <label htmlFor="last-name" className="block text-sm/6 font-medium text-gray-900">
-                Last name
+               Apellidos
               </label>
               <div className="mt-2">
                 <input
@@ -38,7 +38,7 @@ export const FormDoctor = () => {
             </div>
             <div className="sm:col-span-4">
               <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
-                Email address
+                Email 
               </label>
               <div className="mt-2">
                 <input
@@ -52,7 +52,7 @@ export const FormDoctor = () => {
             </div>
             <div className="sm:col-span-4">
               <label htmlFor="city" className="block text-sm/6 font-medium text-gray-900">
-                City
+                Ciudad
               </label>
               <div className="mt-2">
                 <input
@@ -67,7 +67,7 @@ export const FormDoctor = () => {
             <div className="sm:col-span-8 grid grid-cols-4 gap-x-4">
               <div className="col-span-1">
                 <label htmlFor="country-code" className="block text-sm/6 font-medium text-gray-900">
-                  Country Code
+                  Codigo de Pais
                 </label>
                 <div className="mt-2">
                   <input
@@ -81,7 +81,7 @@ export const FormDoctor = () => {
               </div>
               <div className="col-span-3">
                 <label htmlFor="phone-number" className="block text-sm/6 font-medium text-gray-900">
-                  Phone Number
+                  Numero Telefonico
                 </label>
                 <div className="mt-2">
                   <input
@@ -103,14 +103,14 @@ export const FormDoctor = () => {
                   id="file"
                   name="file"
                   type="file"
-                  className="block w-full rounded-md px-3 py-1.5 text-base text-white outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-600 sm:text-sm/6"/>
+                  className="block w-full rounded-md px-3 py-1.5 text-base text-white outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-cyan-600 sm:text-sm/6" />
               </div>
             </div>
 
             <div className="mt-6 flex items-center justify-end gap-x-6 sm:col-span-8">
               <Link to="/Login">
                 <button type="button" className="text-sm/6 font-semibold text-gray-900">
-                  Cancel
+                  Cancelar
                 </button>
               </Link>
               <button

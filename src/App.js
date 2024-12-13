@@ -13,23 +13,23 @@ import './index.css';
 
 function App() {
   return (<BrowserRouter>
-  <main className='px-4 pt-6'>
+    <main className='px-4 pt-6'>
       <NavBar />
       <Routes>
-      <Route path="/" element={<Carrusel/>} />
-      <Route path="/Login" element={<Login/>} />  
-      <Route path="/FormUser" element={<FormUser/>} /> 
-      <Route path="/FormDoctor" element={<FormDoctor/>} /> 
-      <Route path="/Reserva" element={<Reserva/>} /> 
-      <Route path="/Center" element={<Center/>} /> 
-      <Route path="/Medical" element={<Medical/>} /> 
-      <Route path="/Doctors" element={<Doctors/>} /> 
-      </Routes> 
+        <Route path="/" element={<Carrusel />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/FormUser" element={<FormUser />} />
+        <Route path="/FormDoctor" element={<FormDoctor />} />
+        <Route path="/Reserva" element={<Reserva />} />
+        <Route path="/Center" element={<Center />} />
+        <Route path="/Medical" element={<Medical />} />
+        <Route path="/Doctors" element={<Doctors />} />
+      </Routes>
       <Footer />
     </main>
-  
+
   </BrowserRouter>
-    
+
 
 
   );
