@@ -36,7 +36,7 @@ const doctors = [
         id: 6,
         name: "Madeleine Monroy",
         comment: "Medico dedicado, meticuloso y muy profesional ,humano, gracias doctor!!!",
-        image: "https://play-lh.googleusercontent.com/7Ak4Ye7wNUtheIvSKnVgGL_OIZWjGPZNV6TP_3XLxHC-sDHLSE45aDg41dFNmL5COA=w240-h480-rw"
+        image: "https://img.freepik.com/psd-gratis/ilustracion-3d-avatar-linea_23-2151303097.jpg"
     },
 ]
 
